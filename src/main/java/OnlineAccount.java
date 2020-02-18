@@ -13,8 +13,8 @@ public class OnlineAccount {
         return name;
     }
 
-    public void addPaymentMethod(IChargeable item) {
-        this.paymentMethods.add(item);
+    public void addPaymentMethod(IChargeable paymentMethod) {
+        this.paymentMethods.add(paymentMethod);
     }
 
     public int getNumberOfPaymentMethods() {
