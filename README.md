@@ -14,7 +14,7 @@ An online retailer want you to model an `OnlineAccount` used by them to charge c
 <hr>
 
 <details>
-    <summary>We need more help!</summary>
+    <summary>We need more help! (Click the arrow!)</summary>
     
 ### IChargeable
 
