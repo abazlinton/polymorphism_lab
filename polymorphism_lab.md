@@ -1,6 +1,6 @@
 ### Polymorphism Lab
 
-Model an `OnlineAccount` used by a business to charge customers and keep track of transaction costs via `ReportingSoftware`. Different cards incur different costs imposed by the issuer
+An online retailer want you to model an `OnlineAccount` used by them to charge customers and keep track of transaction costs via `ReportingSoftware`. Different cards incur different costs imposed by the issuer. Loyalty cards incur no cost as they are issued by the retailer. Credit cards have a fixed percentage and a risk multiplier. Debit cards charge a fixed percentage.
 
 - `CreditCard`
 - `DebitCards`
@@ -52,6 +52,7 @@ Model an `OnlineAccount` used by a business to charge customers and keep track o
 
 - Charging implies reducing the balance
 - The transaction cost is zero
+- Transactions are not logged
 
 ### OnlineAccount
 #### Concrete class - no relation to other classes
