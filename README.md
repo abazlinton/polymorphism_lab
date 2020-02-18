@@ -66,7 +66,7 @@ An online retailer want you to model an `OnlineAccount` used by them to charge c
 
 ### ReportingSoftware 
 #### Concrete class - no relation to other classes via extends / implements
-- transactionCosts
+- `transactionCosts`
 
 - Should be able to add to list of transaction costs
 </details>
