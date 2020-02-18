@@ -62,7 +62,7 @@ An online retailer want you to model an `OnlineAccount` used by them to charge c
 - `paymentMethods`
 - `reportingSoftware`
 
-- Should be able to `chargeCustomer` via a selected `paymentMethod` and tell the `reportingSoftware` to log the cost of the transaction
+- Should be able to `chargeCustomer(...)` via a selected `paymentMethod` and tell the `reportingSoftware` to log the cost of the transaction
 
 ### ReportingSoftware 
 #### Concrete class - no relation to other classes via extends / implements
