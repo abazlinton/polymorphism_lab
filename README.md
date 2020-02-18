@@ -9,7 +9,7 @@ An online retailer want you to model an `OnlineAccount` used by them to charge c
 <hr>
 
 - Perhaps some of these cards could inherit from a `PaymentCard`?    
-- In order to have the flexibility to charge, log transactions (via ReportingSoftware), and store a list of these different types of card there should be a `IChargeable` Interface that your classed `implement`
+- In order to have the flexibility to charge, log transactions (via ReportingSoftware), and store a list of these different types of card there should be a `IChargeable` Interface that your classes `implement`
 
 <hr>
 
