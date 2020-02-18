@@ -11,14 +11,14 @@
 - `expiryDate`
 - `securityNumber`
 - `charges`
-- `charge`ing implies updating the list of `charges`
+- Charging implies updating the list of `charges`
 
 ### CreditCard
 #### Concrete class `extends PaymentCard`
 - `customerRiskMultiplier`
 - `creditLimit`
 
-- `charge`ing implies reducing the credit limit
+- Charging implies reducing the credit limit
 - Should be able calculate transaction cost of 2% and account for `customerRiskMultiplier`
 
 ### DebitCard
@@ -27,14 +27,14 @@
 - `accountNumber`
 
 - Should be able calculate transaction cost of 1%
-- `charge`ing has no implementation (left to superclass)
+- Charging has no implementation (left to superclass)
 
 ### LoyaltyCard
 #### Concrete class - no Superclass, `implements IChargeable`
 - `vendor`
 - `balance`
 
-- `charge`ing implies reducing the balance
+- Charging implies reducing the balance
 - The transaction cost is zero
 
 ### OnlineAccount
