@@ -16,22 +16,22 @@ public class OnlineAccountTest {
         creditCard = new CreditCard("1111222233334444", "12/23", 234, 1.1, 1000);
         debitCard = new DebitCard("1111222233334444", 909090, 12345678, "12/23", 234);
         loyaltyCard = new LoyaltyCard("123456787890", 1000);
-        onlineAccount = new OnlineAccount("Isa's OnlineAccount", reportingSoftware);
+        onlineAccount = new OnlineAccount("Amazon", reportingSoftware);
     }
 
     @Test
-    public void canGetWalletName() {
-        assertEquals("Isa's OnlineAccount", onlineAccount.getName());
+    public void canGetName() {
+        assertEquals("Amazon", onlineAccount.getName());
     }
 
     @Test
-    public void walletStartsEmpty() {
+    public void startsWithNoPaymentMethods() {
         assertEquals(0, onlineAccount.getNumberOfPaymentMethods());
     }
 
 
     @Test
-    public void canAddEverythingToWallet() {
+    public void canAddPaymentMethodsToAccount() {
         onlineAccount.addPaymentMethod(creditCard);
         onlineAccount.addPaymentMethod(debitCard);
         onlineAccount.addPaymentMethod(loyaltyCard);

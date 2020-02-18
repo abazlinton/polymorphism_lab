@@ -16,10 +16,6 @@ public class DebitCard extends PaymentCard {
         return this.accountNumber;
     }
 
-    public int getSecurityNumber() {
-        return this.securityNumber;
-    }
-
     public double getTransactionCost(double transactionAmount) {
         return transactionAmount * 0.01;
     }

@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public abstract class PaymentCard implements IChargeable {
-    protected String cardNumber;
-    protected String expiryDate;
-    protected int securityNumber;
+    private String cardNumber;
+    private String expiryDate;
+    private int securityNumber;
     private ArrayList<Double> charges;
 
     public PaymentCard(String cardNumber, String expiryDate, int securityNumber) {
