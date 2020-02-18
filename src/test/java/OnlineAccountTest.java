@@ -7,7 +7,7 @@ public class OnlineAccountTest {
     private OnlineAccount onlineAccount;
     private CreditCard creditCard;
     private DebitCard debitCard;
-    private LoyaltyCard loyaltyCard;
+    private GiftCard giftCard;
     private ReportingSoftware reportingSoftware;
 
     @Before()
@@ -15,7 +15,7 @@ public class OnlineAccountTest {
         reportingSoftware = new ReportingSoftware();
         creditCard = new CreditCard("1111222233334444", "12/23", 234, 1.1, 1000);
         debitCard = new DebitCard("1111222233334444", 909090, 12345678, "12/23", 234);
-        loyaltyCard = new LoyaltyCard("123456787890", 1000);
+        giftCard = new GiftCard("123456787890", 1000);
         onlineAccount = new OnlineAccount("Amazon", reportingSoftware);
     }
 
@@ -34,7 +34,7 @@ public class OnlineAccountTest {
     public void canAddPaymentMethodsToAccount() {
         onlineAccount.addPaymentMethod(creditCard);
         onlineAccount.addPaymentMethod(debitCard);
-        onlineAccount.addPaymentMethod(loyaltyCard);
+        onlineAccount.addPaymentMethod(giftCard);
         assertEquals(3, onlineAccount.getNumberOfPaymentMethods());
     }
 

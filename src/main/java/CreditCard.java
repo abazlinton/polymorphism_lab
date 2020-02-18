@@ -13,12 +13,12 @@ public class CreditCard extends PaymentCard {
         return creditLimit;
     }
 
-    public double getTransactionCost(double transactionAmount) {
-        return transactionAmount * 0.02 * this.customerRiskMultiplier;
+    public double getTransactionCost(double purchaseAmount) {
+        return purchaseAmount * 0.02 * this.customerRiskMultiplier;
     }
 
-    public void charge(double transactionAmount) {
-        this.creditLimit -= transactionAmount;
-        super.charge(transactionAmount);
+    public void charge(double purchaseAmount) {
+        this.creditLimit -= purchaseAmount;
+        super.charge(purchaseAmount);
     }
 }

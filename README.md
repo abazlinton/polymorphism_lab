@@ -1,10 +1,10 @@
 ### Polymorphism Lab
 
-An online retailer want you to model an `OnlineAccount` used by them to charge customers and keep track of transaction costs via `ReportingSoftware`. Different cards incur different costs imposed by the issuer. Loyalty cards incur no cost as they are issued by the retailer. Credit cards have a fixed percentage and a risk multiplier. Debit cards charge a fixed percentage.
+An online retailer want you to model an `OnlineAccount` used by them to charge customers and keep track of transaction costs via `ReportingSoftware`. Different cards incur different costs imposed by the issuer. Gift cards incur no cost as they are issued by the retailer. Credit cards have a fixed percentage and a risk multiplier. Debit cards charge a fixed percentage.
 
 - `CreditCard`
 - `DebitCard`
-- `LoyaltyCard`
+- `GiftCard`
 
 <hr>
 
@@ -47,7 +47,7 @@ An online retailer want you to model an `OnlineAccount` used by them to charge c
 - Should be able calculate transaction cost of 1%
 - Charging has no implementation (left to superclass)
 
-### LoyaltyCard
+### GiftCard
 #### Concrete class - no Superclass, `implements IChargeable`
 - `vendor`
 - `balance`

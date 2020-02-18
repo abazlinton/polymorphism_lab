@@ -1,4 +1,4 @@
 public interface IChargeable {
-    double getTransactionCost(double transactionAmount);
-    void charge(double transactionAmount);
+    double getTransactionCost(double purchaseAmount);
+    void charge(double purchaseAmount);
 }

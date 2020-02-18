@@ -23,10 +23,10 @@ public class OnlineAccount {
         return this.paymentMethods.size();
     }
 
-    public void chargeCustomer(double transactionAmount, int index) {
+    public void chargeCustomer(double purchaseAmount, int index) {
         IChargeable paymentMethod = paymentMethods.get(index);
-        paymentMethod.charge(transactionAmount);
-        double transactionCost = paymentMethod.getTransactionCost(transactionAmount);
+        paymentMethod.charge(purchaseAmount);
+        double transactionCost = paymentMethod.getTransactionCost(purchaseAmount);
         reportingSoftware.addTransactionCost(transactionCost);
     }
 }

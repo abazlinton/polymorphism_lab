@@ -29,7 +29,7 @@ public abstract class PaymentCard implements IChargeable {
         return this.securityNumber;
     }
 
-    public void charge(double transactionAmount) {
-        this.charges.add(transactionAmount);
+    public void charge(double purchaseAmount) {
+        this.charges.add(purchaseAmount);
     }
 }

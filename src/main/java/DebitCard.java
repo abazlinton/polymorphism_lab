@@ -16,8 +16,8 @@ public class DebitCard extends PaymentCard {
         return this.accountNumber;
     }
 
-    public double getTransactionCost(double transactionAmount) {
-        return transactionAmount * 0.01;
+    public double getTransactionCost(double purchaseAmount) {
+        return purchaseAmount * 0.01;
     }
 
 }
