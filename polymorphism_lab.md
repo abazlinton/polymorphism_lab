@@ -3,13 +3,13 @@
 An online retailer want you to model an `OnlineAccount` used by them to charge customers and keep track of transaction costs via `ReportingSoftware`. Different cards incur different costs imposed by the issuer. Loyalty cards incur no cost as they are issued by the retailer. Credit cards have a fixed percentage and a risk multiplier. Debit cards charge a fixed percentage.
 
 - `CreditCard`
-- `DebitCards`
+- `DebitCard`
 - `LoyaltyCard`
 
 <hr>
 
 - Perhaps one or more of these cards could inherit from a `PaymentCard`?    
-- In order to have the flexibility to charge, and maintain a list of these different types of card, perhaps there should be a `IChargeable` Interface to support charging and logging transactions.
+- In order to have the flexibility to charge, and maintain a list of these different types of card, perhaps there should be a `IChargeable` Interface to support charging and logging transactions (via ReportingSoftware).
 
 <hr>
 
@@ -55,12 +55,18 @@ An online retailer want you to model an `OnlineAccount` used by them to charge c
 - Transactions are not logged
 
 ### OnlineAccount
-#### Concrete class - no relation to other classes
+#### Concrete class - no relation to other classes via extends / implements
 - `name`
 - `paymentMethods`
 - `reportingSoftware`
 
 - Should be able to `chargeCustomer` via a selected `paymentMethod` and tell the `reportingSoftware` to log the cost of the transaction
+
+### ReportingSoftware 
+#### Concrete class - no relation to other classes via extends / implements
+- transactionCosts
+
+- Should be able to add to list of transaction costs
 
 
 
