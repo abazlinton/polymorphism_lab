@@ -8,8 +8,8 @@ An online retailer want you to model an `OnlineAccount` used by them to charge c
 
 <hr>
 
-- Perhaps one or more of these cards could inherit from a `PaymentCard`?    
-- In order to have the flexibility to charge, and maintain a list of these different types of card, perhaps there should be a `IChargeable` Interface to support charging and logging transactions (via ReportingSoftware).
+- Perhaps some of these cards could inherit from a `PaymentCard`?    
+- In order to have the flexibility to charge, and store a list of these different types of card there should be a `IChargeable` Interface to support charging and logging transactions (via ReportingSoftware).
 
 <hr>
 
