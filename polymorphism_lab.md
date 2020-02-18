@@ -13,7 +13,8 @@ An online retailer want you to model an `OnlineAccount` used by them to charge c
 
 <hr>
 
-
+<details>
+    <summary>Show more</summary>
 ### IChargeable
 
 ```java
@@ -67,7 +68,7 @@ An online retailer want you to model an `OnlineAccount` used by them to charge c
 - transactionCosts
 
 - Should be able to add to list of transaction costs
-
+</details>
 
 
 
