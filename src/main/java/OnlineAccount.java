@@ -22,7 +22,7 @@ public class OnlineAccount {
     }
 
     public double chargeCustomer(double transactionAmount, int index) {
-        IChargeable item = paymentMethods.get(index);
-        return item.getTransactionCost(transactionAmount);
+        IChargeable paymentMethod = paymentMethods.get(index);
+        return paymentMethod.getTransactionCost(transactionAmount);
     }
 }
