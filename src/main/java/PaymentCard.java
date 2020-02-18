@@ -13,6 +13,10 @@ public abstract class PaymentCard implements IChargeable {
         this.charges = new ArrayList<Double>();
     }
 
+    public ArrayList<Double> getCharges() {
+        return charges;
+    }
+
     public String getCardNumber() {
         return this.cardNumber;
     }

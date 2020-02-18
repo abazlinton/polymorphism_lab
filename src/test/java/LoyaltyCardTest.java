@@ -8,17 +8,25 @@ public class LoyaltyCardTest {
 
     @Before
     public void before() {
-        loyaltyCard = new LoyaltyCard("123456787890", "Harrid's Stores");
+        loyaltyCard = new LoyaltyCard("Amazon", 1000);
     }
 
     @Test
     public void canGetVendor() {
-        assertEquals("Harrid's Stores", loyaltyCard.getVendor());
+        assertEquals("Amazon", loyaltyCard.getVendor());
     }
 
     @Test
-    public void canScanCard() {
-        assertEquals("123456787890", loyaltyCard.scan());
+    public void canChargeCard() {
+        loyaltyCard.charge(100);
+        assertEquals(900, loyaltyCard.getBalance(), 0.01);
     }
 
+    @Test
+    public void canGetTransactionCostIsZero(){
+        double transactionCost = loyaltyCard.getTransactionCost(100);
+        assertEquals(0, transactionCost, 0.01);
+    }
 }
+
+

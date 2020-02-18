@@ -36,8 +36,10 @@ public class DebitCardTest {
         assertEquals(234, debitCard.getSecurityNumber());
     }
 
-    @Test public void canScanCard() {
-        assertEquals("Payment Complete", debitCard.scan());
+    @Test
+    public void canGetTransactionCostIs1Percent(){
+        double transactionCost = debitCard.getTransactionCost(100);
+        assertEquals(1, transactionCost, 0.01);
     }
 
 

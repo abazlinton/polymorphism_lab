@@ -7,6 +7,10 @@ public class LoyaltyCard implements IChargeable {
         this.balance = balance;
     }
 
+    public double getBalance() {
+        return balance;
+    }
+
     public String getVendor() {
         return this.vendor;
     }
