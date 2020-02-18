@@ -1,8 +1,8 @@
 ### IChargeable
 
 ```java
-    getTransactionCost(double transactionAmount);
-    charge(double transactionAmount);
+    double getTransactionCost(double transactionAmount);
+    void charge(double transactionAmount);
 ```
 
 ### PaymentCard
